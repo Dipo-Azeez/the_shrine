@@ -1,0 +1,28 @@
+.egg{
+    background-color: rgb(164, 163, 163);
+    padding: 30px;
+    margin: 20px;
+}
+
+.tie{
+    text-align: center;
+    color: white;
+}
+
+.ww{
+    background-color:rgb(105, 47, 8);
+}
+
+.nn{
+    color: white;
+    margin-left: 20px;
+}
+
+.m{
+    color: red;
+}
+
+.e{
+    text-decoration: none;
+    color: white;
+}

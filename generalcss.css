@@ -1,0 +1,145 @@
+.harmburger-menu{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.bar{
+    width: 25px;
+    height: 2.5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.mobile-nav-active .empty{
+    display: block;
+}
+
+.mobile-nav-menu{
+    background-color: rgb(26, 24, 24);
+    width: 100vw;
+    background-size: cover;
+    padding-bottom: 5px;
+    display: none;
+}
+
+.mobile-nav-active .mobile-nav-menu{
+    display: block;
+}
+
+.container{
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-left: -18px;
+    margin-top: -18px;
+    margin-right: -18px;
+    margin-bottom: 60px;
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    /* background-size: cover; */
+    /* background-attachment: fixed; */
+    /* min-height: 100vh; */
+}
+
+.top-heading{
+    display: flex;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+    text-decoration-style: double;
+    box-sizing: border-box;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    background-color: rgb(121, 11, 37);
+}
+
+.bar{
+    width: 25px;
+    height: 2.5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.search{
+    margin-top: 50px;
+    text-decoration: none;
+}
+
+.j{
+    margin-left: 5px;
+    padding-top: 10px;
+}
+
+.qq{
+    /* padding-top: 5px; */
+    color: white;
+}
+
+.tnm{
+    margin-left: 5px;
+}
+
+.zzz{
+    text-decoration: none;
+}
+
+.empty{
+    position: absolute;
+    margin-top: -22px;
+    margin-right: -20px;
+}
+
+.m{
+    border: 1px solid rgb(34, 35, 34);
+}
+
+.era{
+    background-color: rgb(142, 8, 8);
+    padding-bottom: 5px;
+}
+
+.footer{
+    margin-top: 50px;
+    margin-left: -18px;
+    margin-right: -18px;
+    margin-bottom: -18px;
+    text-align: center;
+}
+
+.foot{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.hat{
+    color: white;
+}
+
+.x{
+    text-decoration: none;
+    color:black;
+}
+
+.ape{
+    border-radius: 15px;
+}
+
+.bay{
+    border-radius: 10px;
+}
+
+.p{
+    text-decoration: none;
+    color: black;
+}
+

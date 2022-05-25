@@ -1,0 +1,23 @@
+.mx{
+    background-color: rgb(78, 36, 8);
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.jj{
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+.cc{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.aa{
+    background-color:rgb(105, 47, 8);
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}

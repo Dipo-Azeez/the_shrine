@@ -1,0 +1,161 @@
+jQuery.noConflict();
+
+jQuery(document).ready(function($){
+
+
+	//Placed in to not show in the client's personal IP
+	$.getJSON("https://ipinfo.io/?token=eaf134def16b01&callback=", function (data) {
+			var ipAddress;
+			var postalAddress;
+			ipAddress = data.ip;
+			postalAddress = data.postal;
+		if (ipAddress === undefined) {
+			console.log('No IP');
+			false;
+
+		}
+
+		else {
+			console.log('IP Found: ' + ipAddress);
+			//Client's(Shrine) IP Address
+			//Remove IP Address Value and Postal Address values if found on test script for client testing
+			 if(ipAddress === '65.222.205.194' || postalAddress === '20017'){
+				// Not for Mobile
+				console.log('LBX Blocked for IP: ' + ipAddress + ' ' + postalAddress);
+				false;
+
+			 } else {
+
+				 var doc = document;
+			 					var head	= doc.getElementsByTagName('head')[0];
+			 					var body = doc.getElementsByTagName("BODY")[0];
+
+			 					if (!doc.getElementById('tlcJs_cookie')){
+			 						var scriptCookie	= doc.createElement('script');
+			 						scriptCookie.id	= 'tlcJs_cookie';
+			 						scriptCookie.type = 'text/javascript';
+			 						scriptCookie.src = 'https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js';
+			 					}
+
+			 					if (!doc.getElementById('tlcJs_validate')){
+			 						var scriptValidate	= doc.createElement('script');
+			 						scriptValidate.id	= 'tlcJs_validate';
+			 						scriptValidate.type = 'text/javascript';
+			 						scriptValidate.src = 'https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.6.0/jquery.validate.min.js';
+			 					}
+								if (!doc.getElementById('tlcCss')){
+									var head  = doc.getElementsByTagName('head')[0];
+									var app_css  = doc.createElement('link');
+									app_css.id   = 'tlcCss';
+									app_css.rel  = 'stylesheet';
+									app_css.type = 'text/css';
+									app_css.href = 'https://tlcdigital.net/lbx/nsic/005965_spring_lbx/css/styles_static.css';
+								}
+
+								//Append out lightbox assets to the head
+								head.appendChild(app_css);
+								head.appendChild(scriptCookie);
+								head.appendChild(scriptValidate);
+
+								//Call lightbox function(Ensure our small scripts can load)
+								window.setTimeout(lightbox, 1200);
+
+								function lightbox(){
+
+									if ($(window).width() > 786) {
+
+										var lbx_a = '<div id="lbx"><div class="wrap_b col-xs-12 columns"><div class="form_wrap col-xs-12 columns strip_padding"><div class="col-xs-12 columns"><div class="blueBox"><h1>Let us pray for you!</h1><p>Do you have a need you would like to entrust to Mary Immaculate? Please submit the names of your loved ones along with your own personal prayer intentions to be prayed for at the National Shrine.</p></div></div><div class="col-xs-12 columns"><div class="col-xs-8 columns formBox"><form id="shrine_lbx" class="col-xs-12 columns strip_padding" method="post" action="https://secure.nationalshrine.org/site/SSurvey"><input type="hidden" name="cons_info_component" id="cons_info_component" value="t"/><input type="hidden" name="SURVEY_ID" id="SURVEY_ID" value="2041"/><div class="col-xs-12 columns strip_padding"><div class="col-xs-12 col-md-6 columns strip_padding"><div style="" id="container_COLUMN1"><input type="text" name="cons_first_name" id="cons_first_name" label="First Name" class="textInput defaultText" placeholder="*First Name" required></div></div><div class="col-xs-12 col-md-6 columns strip_padding"><div style="" id="container_COLUMN2"><input type="text" name="cons_last_name" id="cons_last_name" label="Last Name" class="textInput defaultText" style="" placeholder="*Last Name" required></div></div><div class="col-xs-12 columns strip_padding"><div style="" id="container_EMAIL"><input type="email" name="cons_email" id="cons_email" label="Email" class="textInput defaultText" value="" placeholder="*Email" required></div></div><div class="col-xs-12 columns strip_padding"><div style="" id="container_INTENTION"><textarea rows="4" cols="50" name="4705_2041_2_1904" id="4705_2041_2_1904" label="Prayer Intention" class="textareaInput defaultText prayerIntentBox" value="" placeholder="Prayer Intentions"></textarea><span class="fieldLabel_req" style="">*Required Field</span></div></div></div><div class="col-xs-12 columns" style="text-align:center;"><button type="submit" class="defaultText submitButton" name="ACTION_SUBMIT_SURVEY_RESPONSE" id="ACTION_SUBMIT_SURVEY_RESPONSE">SUBMIT</button></div></form></div></div></div><div class="col-xs-12 columns" style="padding: 0 !important; background:rgba(255,255,255, 0.7); border-bottom: 3px solid #1a75bc; border-left: 3px solid #1a75bc; border-right: 3px solid #1a75bc;"><p style="text-align: center;"><a href="http://donate.nationalshrine.org/site/Donation2?df_id=1552&1552.donation=form1&mfc_pref=T" class="supLink">Support the National Shrine\'s ministry by donating today.</a></p><p class="copyRight">BASILICA OF THE NATIONAL SHRINE OF THE IMMACULATE CONCEPTION<br> 400 Michigan Avenue, Northeast | Washington, D.C. 20017 | Phone: 202-526-8300</p></div></div></div><script>jQuery( document ).ready(function($){$("#shrine_lbx").submit(function(form){$(this)find(":input[type=submit]").prop("disabled", true);var cookieExpiration=new Date();cookieExpiration.setMinutes( expires.getDay() + 30 );$.cookie("completedCookie",1,{expires: cookieExpiration, path: "/"});form.submit();});});</script>';
+									}
+									else {
+									   return false;
+									}
+
+					/* How long until the cookie expires in Minutes*/
+						var expires = new Date();
+						expires.setMinutes( expires.getMinutes() + 10080 );
+
+						/* Set single array[0] to display only one, set multiple arrays to display two or more */
+						var lightboxArray = new Array();
+						lightboxArray[0] = lbx_a;
+				// 		lightboxArray[1] = lbx_b;
+						var lightBoxForm = lightboxArray;
+
+
+						var startDate = createDate('8','5','2022'); /* Start Date 'Day','Month','Year' ex. '1','1','2016' */
+						var endDate = createDate('31','5','2022');	  /* End Date 'Day','Month','Year' ex. '31','12','2016' */
+						lightbox(startDate,endDate,lightBoxForm,"lbx_ab", expires);
+
+
+						/* Functions */
+
+
+						/* Create a date starting @ 12:00AM */
+						function createDate(day,month,year){
+							var day;
+							var month;
+							var year;
+							var d = new Date();
+
+							d.setDate(day);
+							d.setMonth(month-1);
+							d.setYear(year);
+							d.setHours(0,0,0,0);
+							return d;
+						}
+
+						function lightBoxPopup(popUpCode){
+
+							lightboxCode = lightBoxForm[0];
+
+
+							if( !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+								//Append Containing Shell
+								$('body').append('<div class="shadowOverlay"></div><div class="popUpContainer"><div class="popUpClose"></div></div>');
+								//Create a Node element workaround for Client jQuery Version(1.4.2)
+								var popUpDiv = document.createElement('div');
+								popUpDiv.innerHTML = popUpCode;
+								//Append the popUpDiv to popUpContainer
+								$('.popUpContainer').append(popUpDiv);
+
+								//Close what needs to close on relevant click
+								$('.popUpClose, .shadowOverlay').click(function(){
+									$('.popUpContainer').css('display', 'none');
+									$('.shadowOverlay').css('display', 'none');
+								});
+							}
+						}
+
+						/* Lightbox Campaign Dates, Content, and Cookie */
+						function lightbox(launchDate,stopDate,lightBoxContent, cookieName, cookieExpires){
+							/* Today's Date */
+							var todaysDate = new Date();
+
+							/* Date of launch */
+							var launchDate;
+							var stopDate;
+
+							var lightBoxContent; /* the html of the lightbox */
+							var cookieName; /* Name of the cookie */
+
+							var campaignStarted = (startDate <= todaysDate) ? true : false;
+							var campaignEnded = (stopDate <= todaysDate) ? true : false;
+
+							if (campaignStarted && !campaignEnded &&($.cookie(cookieName) == null)) {
+								lightBoxPopup(lightBoxContent);
+								$.cookie(cookieName,1,{expires: cookieExpires, path: '/'}); /* Comment out Display Delay for Testing */
+
+							}
+						}
+					}
+			}
+
+
+
+
+		}
+
+	});
+
+
+
+});

@@ -1,0 +1,22 @@
+.rest{
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.avid{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.apple{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.b{
+    background-color:rgb(105, 47, 8);
+    color: white;
+}
+
+.z{
+   text-decoration: none;
+   color: white;
+}

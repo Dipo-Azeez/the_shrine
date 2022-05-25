@@ -1,0 +1,45 @@
+.king{
+    margin-top: 19px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: green;
+    text-align: center;
+}
+
+.bad{
+    border-radius: 10px;
+    margin: 20px;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.king_1{
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.king_2{
+    font-size: 18px;
+}
+
+.bull{
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.kk{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: green;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: white;
+}
