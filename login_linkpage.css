@@ -43,9 +43,3 @@
     margin-top: 50px;
     color: white;
 }
-
-.mxx{
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-}
