@@ -512,10 +512,11 @@ font-size: 30px;
     }
 
     .op{
-      width: 150px;  
+      width: 200px;  
+      justify-content: center;
     }
 
     .btc{
-        margin-right: 25px;
+        justify-content: center;
     }
   }
