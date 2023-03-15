@@ -4,6 +4,8 @@
 
 .l{
     border-radius: 5px;
+    width: 900px;
+    height: 550px;
 }
 
 .mnb{
@@ -14,4 +16,18 @@
 .z{
     text-decoration: none;
     color: black;
+}
+
+@media screen and (max-width: 720px ) { 
+    .l{
+        width: 550px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .l{
+        width: 100%;
+        height: auto;
+    }
 }

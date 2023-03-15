@@ -7,6 +7,7 @@
 .hgd{
     width: 900px;
     height: 550px;
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 720px) {
@@ -18,7 +19,7 @@
 
 @media screen and (max-width: 420px) {
     .hgd{
-        width: 380px;
-        height: 320px;
+        width: 100%;
+        height: auto;
     }
 }

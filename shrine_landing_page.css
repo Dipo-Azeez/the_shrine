@@ -508,6 +508,14 @@ font-size: 30px;
 
     .sig{
         width: 100%;
-        height: 250px;
+        height: auto;
+    }
+
+    .op{
+      width: 150px;  
+    }
+
+    .btc{
+        margin-right: 25px;
     }
   }

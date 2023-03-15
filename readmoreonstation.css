@@ -4,9 +4,27 @@
     color: white;
 }
 
+.apex{
+    width: 900px;
+    height: 550px;
+}
+
 @media screen and (max-width: 720px) {
     /*changes reflects on screen with a width of 720px and below*/
     .bv{
         margin-left: 20px;
+    }
+
+    .apex{
+        width: 500px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    /*changes reflects on screen with a width of 720px and below*/
+    .apex{
+        width: 100%;
+        height: auto;
     }
 }

@@ -41,7 +41,7 @@
 @media screen and (max-width: 420px) {
     /*changes reflects on screen with a width of 720px and below*/
     .lo{
-        width: 380px;
-        height: 320px;
+        width: 100%;
+        height: auto;
     }
 }
