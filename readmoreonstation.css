@@ -3,3 +3,10 @@
     background-color: saddlebrown;
     color: white;
 }
+
+@media screen and (max-width: 720px) {
+    /*changes reflects on screen with a width of 720px and below*/
+    .bv{
+        margin-left: 20px;
+    }
+}

@@ -21,3 +21,27 @@
     margin-left: 10px;
     margin-right: 10px;
 }
+
+.lo{
+    width: 900px;
+    height: 550px;
+}
+
+
+
+@media screen and (max-width: 720px) {
+    /*changes reflects on screen with a width of 720px and below*/
+    .lo{
+        width: 500px;
+        height: 350px;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    /*changes reflects on screen with a width of 720px and below*/
+    .lo{
+        width: 380px;
+        height: 320px;
+    }
+}

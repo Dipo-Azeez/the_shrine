@@ -13,4 +13,13 @@
 
 .guy{
     border-radius: 5px;
+    width: 900px;
+    height: 550px;
+}
+
+@media screen and (max-width: 720px ) { 
+    .guy{
+        height: 320px;
+        width: 380px;
+    }
 }

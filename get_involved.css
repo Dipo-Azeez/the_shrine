@@ -10,7 +10,12 @@
 }
 
 .f{
-    background-color: blue;
-    border-radius: 5px;
+    /* background-color: blue; */
+    background-color: rgb(12, 165, 53);
+    border-radius: 10px;
     padding: 10px;
+}
+
+.f:hover{
+    background-color: green;
 }

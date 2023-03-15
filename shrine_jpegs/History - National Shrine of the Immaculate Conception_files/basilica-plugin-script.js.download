@@ -1,2 +1,0 @@
-jQuery(document).ready(function(){var announcementMessage=jQuery('.vnewsticker > span').get(0).innerHTML;var noAnnouncementMessage='No announcement available';if(announcementMessage.toLowerCase()==noAnnouncementMessage.toLowerCase()){jQuery('.ev-announcement').hide();}
-jQuery('.go-back').on('click',function(){window.history.back(-1);});});

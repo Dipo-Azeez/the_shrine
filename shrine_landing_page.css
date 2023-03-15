@@ -46,7 +46,8 @@ body{
     background-color: rgb(164, 163, 163);
     padding: 30px;
     margin-top: 20px;
-    width: 250px;
+    /* width: 250px; */
+    width: 100%;
 }
 
 .nav{
@@ -108,7 +109,8 @@ body{
 }
 
 .ool{
-    text-align: start;
+    /* text-align: start; */
+    justify-content: center;
 }
 
 .section-2{
@@ -204,6 +206,8 @@ font-size: 30px;
 
 .guy{
     border-radius: 10px;
+    width: 50rem;
+    height: 35rem;
 }
 
 .ex{
@@ -396,6 +400,8 @@ font-size: 30px;
     margin-top: 30px;
     margin-bottom: 20px;
     border-radius: 5px;
+    width: 50rem;
+    height: 30rem;
 }
 
 .buttonz{
@@ -462,11 +468,46 @@ font-size: 30px;
     border-radius: 15px;
 }
 
-.bay{
-    border-radius: 10px;
-}
-
 .x{
     text-decoration: none;
     color:black;
 }
+
+  .decor{
+    text-decoration: none;
+  }
+  
+  .socicon {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 15px;
+  }
+
+  @media screen and (max-width: 720px) {
+    /*changes reflects on screen with a width of 720px and below*/
+    .guy{
+        width: 500px;
+        height: 350px;
+    }
+
+    .sig{
+        width: 600px;
+        height: 350px;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    .egg{
+        width: 250px;
+    }
+
+    .guy{
+        width: 100%;
+        height: 250px;
+    }
+
+    .sig{
+        width: 100%;
+        height: 250px;
+    }
+  }

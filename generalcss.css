@@ -143,3 +143,9 @@
     color: black;
 }
 
+@media screen and (max-width: 420px) {
+    .foot{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
