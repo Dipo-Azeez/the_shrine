@@ -17,7 +17,7 @@ body{
 }
 
 .container{
-    background-image: url(shrine_jpegs/th.jpg);
+    background-image: url(shrine_jpegs/th\ \(1\).jpg);
     position: relative;
     text-align: center;
     color: white;
