@@ -20,6 +20,10 @@
     color: white;
 }
 
+.ss:hover{
+    color: green;
+}
+
 .f{
     padding-top: 10px;
 }
